@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>División Registros y Kardex</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+<body>
+            <header class="header">
+                <div class="contenedor">
+                    <div class="barra"> 
+                        <a class="logo" href="index.html">
+                            <h3 class="logo_nombre no-margin centrar-texto">División <span class="logo__bold">REGISTROS Y KARDEX</span></h3>
+                        </a>
+                        <nav class="navegacion">
+                            <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                            <a href="ingreso.html" class="navegacion__enlace">Ingreso al Sistema</a>
+                            <a href="seguimiento.html" class="navegacion__enlace">Seguimiento de Tramite</a>
+                        </nav>
+                    </div>
+                </div>
+
+        <div class="header_texto">
+                <h1 class="no-margin">I.T. "ESCUELA INDUSTRIAL SUPERIOR PEDRO DOMINGO MURILLO" </h1>
+                <p class="no-margin">¡ Formando Profesionales Técnicos de Excelencia..!</p> 
+        </div>
+        
+    </header>
+
+    <!-- a partir de aca contenedor de los anuncios-->
+
+    <H1>ESTADO DEL TRÁMITE</H1>
+    <form action=seguimiento.php method="post">
+    Carnet de Identidad: <input name="CI">
+    Tipo de Trámite: <select name="cb1">
+            <option value="V1">Egreso</option>
+            <option value="v2">Cerificado de Notas</option>
+            <option value="v3">Defensa de Grado</option>
+            </select>
+        <input type="button" name="buscar" value="Buscar">
+    </form>
+
+    <!-- aca empieza el pie de paginas -->
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra"> 
+                <a class="logo" href="index.html">
+                    <h4 class="logo_nombre no-margin centrar-texto">División <span class="logo__bold">REGISTROS Y KARDEX</span></h4>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="ingreso.html" class="navegacion__enlace">Ingreso al Sistema</a>
+                    <a href="seguimiento.html" class="navegacion__enlace">Seguimiento de Tramite</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

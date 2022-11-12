@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Formulario de Registro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/opensans-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/line-awesome/css/line-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="form-v4">
+	<div class="page-content">
+		<div class="form-v4-content">
+			<div class="form-left">
+				<h2>Información de Registro</h2>
+				<h3>Requisitos</h3>
+				<p class="text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Et molestie ac feugiat sed. Diam volutpat commodo.</p>
+				<p class="text-2"><span>Eu ultrices:</span> Vitae auctor eu augue ut. Malesuada nunc vel risus commodo
+					viverra. Praesent elementum facilisis leo vel.</p>
+
+			</div>
+			<form class="form-detail" action="#" method="post" id="myform">
+				<h2>REGISTRAR DOCUMENTOS</h2>
+
+				<div class="form-row form-row-1">
+					<label for="nombres">Nombres</label>
+					<input type="text" name="nombres" id="nombres" class="input-text" required>
+				</div>
+
+				<div class="form-row form-row-1">
+					<label for="apellidos">Apellidos</label>
+					<input type="text" name="apellidos" id="apellidos" class="input-text" required>
+				</div>
+
+				<div class="form-row">
+					<label for="correo electronico">Correo</label>
+					<input type="text" name="correo electronico" id="correo electronico" class="input-text" required
+						pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+				</div>
+
+				<div class="form-group">
+					<div class="form-row form-row-1">
+						<label for="fecha_nacimiento">Fecha Nacimiento</label>
+						<input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="input-text">
+					</div>
+					<div class="form-row form-row-1">
+						<label for="Celular">Celular</label>
+						<input type="number" name="celular" id="celular" class="input-text" required>
+					</div>
+				</div>
+
+				<div>
+					<label for="tipo_documento">Tipo Tramite</label>
+					<select class="selectWrapper" name="" id="">
+						<option value="">Conclución de Estudio</option>
+						<option value="">Proyecto de Grado</option>
+						<option value="">Certificado de Egreso</option>
+						<option value="">Certificado de Calificación</option>
+					</select>
+				</div>
+
+				<div class="form-row-last text-al" style="padding-top: 20px;">
+					<input type="submit" name="register" class="register" value="Registrar">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
